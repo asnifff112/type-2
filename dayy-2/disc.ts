@@ -20,7 +20,7 @@ type cancelledOrder = {
 // combain all discriminated union
 type Orderdetail = pendingOrder | shippedOrder | deliveredOrder | cancelledOrder ;
 // function using discriminated union 
-function handleOrders(Orderdetail:Orderdetail) {
+function handleOrderss(Orderdetail:Orderdetail) {
     switch(Orderdetail.status){
      case "pending":
         console.log("your order is pending .it may arrive in" ,Orderdetail.estimatedDays,"days");
@@ -38,9 +38,9 @@ function handleOrders(Orderdetail:Orderdetail) {
 }
 
 
-let order101: shippedOrder={
+let order1: shippedOrder={
     status: "shipped",
     trakkingid:"ASII1394"
 }
 
-handleOrders(order101)
+handleOrderss(order1)
