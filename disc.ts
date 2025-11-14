@@ -38,9 +38,9 @@ function handleOrderss(Orderdetail:Orderdetail) {
 }
 
 
-let order1: shippedOrder={
+let order11: shippedOrder={
     status: "shipped",
     trakkingid:"ASII1394"
 }
 
-handleOrderss(order1)
+handleOrderss(order11)

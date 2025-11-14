@@ -1,4 +1,4 @@
-enum OrderStatus {
+enum OrderStatuss {
     Pending = "PENDING",
     Shipped = "SHIPPED",
     Delivered = "DELIVERED",
@@ -8,19 +8,19 @@ enum OrderStatus {
 type Order = {
     id : number,
     customer: string,
-    status : OrderStatus
+    status : OrderStatuss
 }
 
-const order1:Order = {id :1, customer:"asnif", status:OrderStatus.Cancelled}
+const order100:Order = {id :1, customer:"asnif", status:OrderStatuss.Cancelled}
 
-if (order1.status === OrderStatus.Delivered){
+if (order1.status === OrderStatuss.Delivered){
     console.log("order is delevered thank you");
     
-}else if( order1.status === OrderStatus.Pending){
+}else if( order1.status === OrderStatuss.Pending){
         console.log("your order is pending ");  
-}else if (order1.status === OrderStatus.Cancelled){
+}else if (order1.status === OrderStatuss.Cancelled){
     console.log("your order cancelled");
-}else if (order1.status === OrderStatus.Shipped){
+}else if (order1.status === OrderStatuss.Shipped){
     console.log("your oeder shipped");
     
 }
